@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>My Blog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<style type="text/css">
+
+body {
+   background: #F7F7F6 url(images/background.gif) repeat-y 50% 0;
+   background-attachment: fixed;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+#container {
+   margin: 0px auto;
+   text-align: left;
+   width: 692px;
+}
+
+h1 {
+   text-indent: -9999px;
+   width: 692px;
+   height: 90px;
+   background: url(images/header.jpg);
+   margin: 0;
+   padding: 0;
+}
+
+
+#left {
+	width: 178px;
+	float: left;
+}
+
+#content {
+	width: 479px;
+	float: left;
+	padding: 15px 0 10px 20px;
+}
+
+#content h2 {
+	font: normal 18px Georgia, Times New Roman, Times, serif;
+	background: transparent url(images/bullet_title.gif) no-repeat;
+	color: #80866A;
+	width: 454px;
+	padding: 0 0 0 30px;
+}
+
+#footer {	
+	margin: 0px auto;
+	position: relative;
+	background-color: #717F51;
+	border-top: 9px solid #F7F7F6;
+	width: 692px;
+	padding: 5px 0;
+	clear: both;
+}
+
+#footer h2 {
+	maring: 0;
+	text-align: center;
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #D3D8C4;
+}
+
+#footer h2 a:visited, #footer h2 a:link {
+	color: #D3D8C4;
+	text-decoration: none;
+	border-bottom: 1px dotted #D3D8C4;
+}
+
+#footer h2 a:hover {
+	color: #F7F7F6;
+	text-decoration: none;
+	border-bottom: none;
+	background-color: #A5003B;
+}
+
+.text {
+	font: 11px/18px Verdana, Arial, Helvetica, sans-serif;
+	color: #5B604C;
+	margin-bottom: 10px;
+}
+
+.imageright {
+	float: right;
+	padding: 7px;
+	margin-left: 10px;
+	background-color: #ffffff;
+	border: 1px solid #bac1a3;
+}
+
+/* --- navigation --- */
+
+#navcontainer {
+	width: 178px;		
+}
+
+#navcontainer ul {
+	margin: 0;
+ 	padding: 0;
+ 	list-style-type: none;
+ 	font: bold 12px/22px Verdana, Arial, Helvetica, sans-serif;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #fff;
+}
+
+#navcontainer a {
+ 	display: block;
+ 	width: 178px;
+ 	height: 22px;
+}
+
+#navcontainer a:link, #navcontainer a:visited {
+	background: url(images/bg_navbutton.gif);
+ 	color: #5C604D;
+ 	text-decoration: none;
+}
+
+#navcontainer a:hover {
+	background: url(images/bg_navbutton_over.gif);
+	color: #A5003B;
+	text-decoration: none;
+}
+
+#navcontainer li a#current {
+	background: url(images/bg_navbutton_over.gif);
+	color: #A5003B;
+	text-decoration: none;
+}
+
+/* --- favorite links--- */
+
+#favlinks {
+	width: 163px;
+	padding-left: 15px;
+	margin-top: 10px;
+}
+
+#favlinks h2 {
+	font: normal 16px Georgia, Times New Roman, Times, serif;
+	color: #5C604D;	
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+#favlinks ul {
+	margin: 0;
+ 	padding: 0;
+ 	list-style-type: none;
+}
+
+ul.extlinks li {
+	background: url(images/bullet_extlink.gif) no-repeat 0 3px;
+	font: normal 11px/16px Verdana, Arial, Helvetica, sans-serif;
+	padding-left: 12px;
+}
+
+.extlinks a:link {
+ 	color: #A5003B;
+ 	text-decoration: none;
+ 	border-bottom: 1px dotted #A5003B;
+}
+
+.extlinks a:visited {
+ 	color: #6F2D47;
+ 	text-decoration: none;
+ 	border-bottom: 1px dotted #959E79;
+}
+
+.extlinks a:hover {
+	background-color: #C3C9B1;
+	color: #A5003B;
+	text-decoration: none;
+	border-bottom: 1px solid #A5003B;
+}
+
+
+
+
+</style>
+		<script type="text/javascript">
+		<!--
+		function getWindowHeight() {
+			var windowHeight = 0;
+			if (typeof(window.innerHeight) == 'number') {
+				windowHeight = window.innerHeight;
+			}
+			else {
+				if (document.documentElement && document.documentElement.clientHeight) {
+					windowHeight = document.documentElement.clientHeight;
+				}
+				else {
+					if (document.body && document.body.clientHeight) {
+						windowHeight = document.body.clientHeight;
+					}
+				}
+			}
+			return windowHeight;
+		}
+		function setFooter() {
+			if (document.getElementById) {
+				var windowHeight = getWindowHeight();
+				if (windowHeight > 0) {
+					var contentHeight = document.getElementById('container').offsetHeight;
+					var footerElement = document.getElementById('footer');
+					var footerHeight  = footerElement.offsetHeight;
+					if (windowHeight - (contentHeight + footerHeight) >= 0) {
+						footerElement.style.position = 'relative';
+						footerElement.style.top = (windowHeight - (contentHeight + footerHeight)) + 'px';
+					}
+					else {
+						footerElement.style.position = 'static';
+					}
+				}
+			}
+		}
+		window.onload = function() {
+			setFooter();
+		}
+		window.onresize = function() {
+			setFooter();
+		}
+		//-->
+		</script>
+
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container">
+
+	<h1>My Blog</h1>
+
+<!-- Begin LEFT -->
+<div id="left">
+
+<!-- Begin navigation -->
+	<div id="navcontainer">
+		 <ul>
+			 <li><a href="#" id="current">Home</a></li>
+			 <li><a href="#">About me</a></li>
+			 <li><a href="#">Contact me</a></li>
+			 <li><a href="#">Articles</a></li>
+			 <li><a href="http://ximicc.com">Ximicc</a></li>
+		 </ul>
+	</div>
+<!-- End navigation -->
+
+<!-- Begin favorite links -->
+<div id="favlinks">
+	<h2>My Favorite Sites</h2>
+ <ul class="extlinks">
+ <li><a href="http://stopdesign.com/">Stopdesign</a></li>
+ <li><a href="http://www.simplebits.com/">SimpleBits</a></li>
+ <li><a href="http://www.mezzoblue.com/">Mezzoblue</a></li>
+ <li><a href="http://www.zeldman.com/">Zeldman</a></li>
+ <li><a href="http://www.1976design.com/blog/">1976 Design</a></li>
+ <li><a href="http://cssvault.com/">CSS Vault</a></li>
+ <li><a href="http://www.7nights.com/asterisk/">Asterisk*</a></li>
+ <li><a href="http://www.cameronmoll.com/">Authentic Boredom</a></li>
+ <li><a href="http://www.justwatchthesky.com/Journal/">Just Watch The Sky</a></li>
+ <li><a href="http://designbyfire.com/">Design by Fire</a></li>
+ <li><a href="http://www.nundroo.com/">Nundroo</a></li>
+ <li><a href="http://www.shauninman.com/">Shaun Inman</a></li>
+ <li><a href="http://www.hicksdesign.co.uk/journal/">Jon Hicks</a></li>
+ <li><a href="http://www.andybudd.com/">Andy Budd</a></li>
+ <li><a href="http://ximicc.com">ximicc</a></li>
+ <li><a href="http://www.whatdoiknow.org/">What Do I Know?</a></li>
+ </ul>
+</div>
+<!-- End favorite links -->
+
+</div>
+<!-- End LEFT -->
+
+<!-- Begin Content on the RIGHT -->
+<div id="content">
+<h2>This is the title</h2>
+
+<p class="text"><img src="images/image.jpg" alt="image of the dessert" width="150" height="139" class="imageright" />Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur wisi mi, rutrum sit amet, viverra vel, sodales vitae, 
+magna. Donec tempus felis sit amet eros. Nam urna. Duis vel orci. Mauris placerat elit id mauris. Nullam sagittis tincidunt dolor. Nunc odio 
+magna, porta eu, ullamcorper ac, volutpat eget, nunc. Quisque tempus leo at augue. Etiam feugiat massa in sem. Quisque nec diam. Nunc tempus 
+wisi nec risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In auctor. Donec imperdiet ante 
+in metus. Curabitur felis nisl, placerat non, mollis eget, ullamcorper sit amet, metus. In hac habitasse platea dictumst. Nam interdum urna ut 
+sapien. Nulla facilisi. Mauris ut velit. Proin non arcu.</p>
+
+<p class="text">Aenean vel dui. Ut sit amet augue sed erat convallis ullamcorper. Nam feugiat dictum lectus. Mauris magna arcu, aliquam et, tempus eget, auctor 
+id, libero. Ut facilisis tortor eget turpis. Praesent ligula elit, suscipit a, malesuada ac, porttitor eget, sapien. Vestibulum ante ipsum 
+primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus pede. Vivamus malesuada viverra nunc. Sed fringilla commodo odio. 
+Quisque luctus diam at odio. Nulla commodo. Donec mollis massa.</p>
+
+<p class="text"> Nullam vitae lorem et leo euismod convallis. Nunc auctor elementum lacus. Ut sagittis felis. Donec non wisi. In erat. Proin ornare enim sed 
+ nulla. Curabitur sagittis congue arcu. Aliquam auctor placerat turpis. Suspendisse semper. Curabitur erat urna, eleifend at, varius eu, 
+ molestie volutpat, purus. Proin consectetuer.</p>
+
+</div>
+<!-- End Content on the RIGHT -->
+
+<div class="clear">&nbsp;</div>
+
+</div>
+<!-- End Container -->
+
+<!-- Begin Footer -->
+<div id="footer">
+  <h2>copyright &copy; 2004 Veerle Pieters - <a href="http://www.duoh.com" target="_blank">Duoh!&reg; n.v.</a></h2>
+</div>
+<!-- End Footer -->
+
+</body>
+
+</html>
+

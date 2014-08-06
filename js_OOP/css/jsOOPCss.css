@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2014-08-05 11:28:29
+ * @version $Id$
+ */
+body {
+   background:url(../images/background.gif) repeat-y 50%;
+   background-attachment: fixed;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+
+#container{
+	margin: 0px auto;
+	width: 692px;
+	text-align: left;
+}
+#header-contain{
+	width: 692px;
+	height: 90px;
+   background: url(../images/header.jpg);
+   margin: 0;
+   padding: 0;
+   text-align: left;
+}
+#body-contain{
+	width: 692px;
+	float: left;
+}
+#body-contain-left{
+width: 178px;
+float: left;
+}
+#navi ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	font: bold 12px/22px Verdana, Arial, Helvetica, sans-serif;
+	text-indent: 20px;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #fff;
+	float: left;
+}
+#navi a{
+	display: block;
+	width: 178px;
+ 	height: 22px;
+}
+#navi a:link, #navi a:visited {
+	background: url(../images/bg_navbutton.gif);
+ 	color: #5C604D;
+ 	text-decoration: none;
+}
+#recommended{
+	width: 178px;
+	float: left;
+}
+#recommended h2{
+	font: normal 16px Georgia, Times New Roman, Times, serif;
+	color: #5C604D;	
+	margin: 0 0 10px  10px;
+	padding: 0;
+}
+#recommended ul{
+list-style-type: none;
+width: 176px;
+margin: 0 0 0 10px;
+padding: 0px;
+}
+
+#recommended li{
+	background: url(../images/bullet_extlink.gif) no-repeat 0 3px;
+	font: normal 11px/16px Verdana, Arial, Helvetica, sans-serif;
+	padding-left: 12px;
+}
+#body-contain-right{
+	width: 514px;
+	float: left;
+}
+
+.text {
+	text-indent: 2em;
+	font: 11px/18px Verdana, Arial, Helvetica, sans-serif;
+	color: #5B604C;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#body-contain-right img{
+	padding-right: 10px;
+	float: left;
+}
+
+#footer-contain{
+	margin: 0px auto;
+	width: 692px;
+}
+#footer-contain{
+	margin: 0px auto;
+	position: relative;
+	background-color: #717F51;
+	border-top: 9px solid #F7F7F6;
+	width: 692px;
+	padding: 5px 0;
+	clear: both;
+}
+.clear {
+	clear: both;
+}
