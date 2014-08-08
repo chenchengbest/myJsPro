@@ -21,7 +21,7 @@ body {
 #header-contain{
 	width: 692px;
 	height: 90px;
-   background: url(../images/header.jpg);
+   background: url(/images/header.jpg);
    margin: 0;
    padding: 0;
    text-align: left;
@@ -50,7 +50,7 @@ float: left;
  	height: 22px;
 }
 #navi a:link, #navi a:visited {
-	background: url(../images/bg_navbutton.gif);
+	background: url(/images/bg_navbutton.gif);
  	color: #5C604D;
  	text-decoration: none;
 }
@@ -72,7 +72,7 @@ padding: 0px;
 }
 
 #recommended li{
-	background: url(../images/bullet_extlink.gif) no-repeat 0 3px;
+	background: url(/images/bullet_extlink.gif) no-repeat 0 3px;
 	font: normal 11px/16px Verdana, Arial, Helvetica, sans-serif;
 	padding-left: 12px;
 }
