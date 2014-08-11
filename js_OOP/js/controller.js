@@ -12,3 +12,16 @@ function PhoneListCtrl($scope, $http) {
 
   $scope.orderProp = 'age';
 }
+/* var PhoneListCtrl= ['$scope', '$http', function($scope, $http) { 
+	$http.get('/data/myData.html').success(function(data) {
+	    $scope.phones = data;
+	  });
+	  $scope.orderProp = 'age';
+	}
+];*/
+
+function PhoneDetailCtrl($scope, $routeParams) {
+  $scope.phoneId = $routeParams.id;
+}
+
+//PhoneDetailCtrl.$inject = ['$scope', '$routeParams'];
